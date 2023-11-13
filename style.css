@@ -1,0 +1,45 @@
+
+body{
+    background: #FFFFFF;
+}
+#banner{
+    width: 100%;
+}
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.centralizado__titulo{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#missao{
+    font-size: 20px;
+}
+/*<utilizado para selecionar a tag dentro da tag sem utilização de classe>*/
+em strong{
+    color: red;
+}
+
+.lista__item{
+    font-style: italic;
+    list-style: none;
+}
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.beneficios__imagem{
+    width: 50%;
+}
