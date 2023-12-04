@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="cabecalho__divisao">
+            <h1><img src="imagens/logo.png" alt="Logo da barbearia Alura"></h1>
+            <nav>
+                <ul class="cabecalho__lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main class="principal__contato">
+    <!-- Para criar um formulário utilizamos a tag form. Geralmente é feito com
+    input, tag que representa o campo onde escrevemos os dados. Toda tag input
+é seguida por um tipo, type, que pode ser texto, números, etc. e por padrão
+um id, pois geralmente é único. Já a tag label, rótulo, também é usada para
+escrever o que aquele input é responsável. Geralmente a tag label vem seguida do for
+para dizer a qual input, a partir do id, está relacionada-->
+    <form>
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="input-padrao" required placeholder
+        ="seuemail@dominio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder
+        ="(XX)XXXXX-XXXX">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="40" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+        <!-- utilizando o name="contato" na tag input, garantimos que 
+        quando selecionamos uma caixa a outra fique desmarcada -->
+
+        <!-- Utilizamos o type="radio" para criar caixas de marcação -->
+    <fieldset>  
+        <legend>Como prefere o nosso contato?</legend>
+        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">
+        E-mail</label>
+        
+        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+        Telefone</label>
+        
+        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+        Whatsapp</label>
+    </fieldset>  
+<!-- A tag select cria uma caixa onde é possível, a partir da tag option, criar
+opções para serem selecionadas. Se assimila a uma lista -->
+     <fieldset>  
+        <legend>Qual melhor horário para atendimento?</legend>
+        <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+        </select>
+<!-- O type utilizado no input interfere na navegação quando utilizamos o celular,
+mudando o teclado de acordo com o type escolhido -->
+
+<!-- Fieldset é utilizado para criar uma divisão mais específica quando há
+divisão nos dados do formulário. Utilizada basicamente pra isso, principalmente
+quando utilizamos dados de um cartão, por exemplo
+No fieldset não há parágrafos, mas sim títulos que são chamados de legend -->
+
+     </fieldset> 
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+<!--Para tabela utilizamos a tag table, depois com a tag tr, para criar as linhas
+e td para criar as colunas-->
+    <table>
+        <thead><!--Criado para identificar o cabeçalho da tabela-->
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th><!--Modificamos td por th para dizer que a celula(coluna) é do cabeçário-->
+            </tr>
+        </thead>
+        <tbody><!--tbody é o corpo da tabela, onde fica o restante do conteúdo-->
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h - 20h</td>
+            </tr>
+        </tbody>
+    </table>
+
+</main>
+
+<footer class="rodape">
+    <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura com cor diferente">
+    <p class="copyright">&copy;Copyright Barbearia Alura - 2023</p>
+</footer>
+</body>
+</html>
